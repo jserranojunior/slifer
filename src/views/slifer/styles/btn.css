@@ -1,0 +1,49 @@
+.btn-blue {
+  @apply border border-indigo-500 bg-indigo-500 text-white rounded-md py-1 px-2 mt-2 transition duration-500  select-none;
+}
+
+.btn-blue:focus {
+  @apply outline-none shadow-inner cursor-pointer;
+}
+.btn-blue:hover {
+  @apply bg-indigo-600 cursor-pointer;
+}
+.btn-yellow {
+  @apply border border-yellow-500 bg-yellow-500 text-white rounded-md py-1 px-2 mt-2 transition duration-500  select-none;
+}
+
+.btn-yellow:focus {
+  @apply outline-none shadow-inner cursor-pointer;
+}
+.btn-yellow:hover {
+  @apply bg-yellow-600 cursor-pointer;
+}
+.btn-red {
+  @apply border border-red-500 bg-red-500 text-white rounded-md py-1 px-2 mt-2 transition duration-500  select-none;
+}
+
+.btn-red:focus {
+  @apply outline-none shadow-inner cursor-pointer;
+}
+.btn-red:hover {
+  @apply bg-red-600 cursor-pointer;
+}
+.btn-green {
+  @apply border border-green-500 bg-green-500 text-white rounded-md py-1 px-2 mt-2 transition duration-500  select-none;
+}
+.btn-green:focus {
+  @apply outline-none shadow-inner cursor-pointer;
+}
+.btn-green:hover {
+  @apply bg-green-600 cursor-pointer;
+}
+  .btn-gray {
+    @apply bg-gray-700 text-white font-bold py-1 px-2 rounded cursor-pointer text-center;
+  }
+
+.btn {
+  @apply py-1 px-2 rounded text-center;
+}
+.btn-sm {
+  @apply p-1 rounded text-center;
+}

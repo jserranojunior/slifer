@@ -1,0 +1,12 @@
+  .card {
+    @apply bg-white rounded w-full px-3 py-2 shadow;
+  }
+  .card-header {
+    @apply text-center border-b border-gray-200 py-2;
+  }
+  .card-body {
+    @apply border-b border-gray-200 py-2;
+  }
+  .card-footer {
+    @apply py-2;
+  }

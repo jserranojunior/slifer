@@ -1,0 +1,28 @@
+/* .form {
+  @apply block w-full p-2 mt-2 text-gray-800 bg-gray-200 appearance-none;
+}
+.form:focus {
+  @apply outline-none bg-gray-300 shadow-inner;
+} */
+  /* .form {
+    @apply appearance-none border rounded w-full py-2 px-2 text-gray-700 leading-tight bg-white;
+  }
+  
+  .form:focus {
+    @apply outline-none shadow;
+  }
+ */
+
+
+  .label {
+    @apply text-gray-700 text-sm font-bold mb-1;
+  }
+
+  .form{
+    @apply  mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm  sm:text-sm ;
+  }
+  .form:focus {
+    @apply   outline-none ring-indigo-500 border-indigo-200;
+  }
+
+

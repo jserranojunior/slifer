@@ -1,0 +1,26 @@
+/* eslint-disable */
+@import "../../views/slifer/style.css";
+
+@tailwind base;
+
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+ 
+
+  @font-face {
+    font-family: bradhitc;
+    font-weight: 400;
+    src: url("/fonts/BRADHITC.ttf") format("ttf");
+  }
+
+  .text-acolher,
+  s {
+    font-family: bradhitc;
+    color: #203864;
+    text-decoration: none;
+  }
+
+}
+

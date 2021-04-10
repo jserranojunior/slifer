@@ -1,0 +1,26 @@
+.nav-sub-item {
+  @apply mb-1;
+}
+
+  .nav-icon {
+    @apply text-gray-600 mr-3 w-5;
+  }
+
+  .nav-item {
+    @apply flex flex-wrap items-center space-x-3 text-gray-700 p-2 rounded-md font-medium cursor-pointer;
+  }
+  .nav-item:hover {
+    @apply bg-gray-200;
+  }
+
+    .nav-btn {
+    @apply flex flex-row items-center w-full px-4 py-2 mt-2 text-xs font-semibold 
+  text-left bg-gray-200 rounded-lg text-black;
+  }
+  .nav-btn:hover {
+    @apply text-gray-900  bg-blue-200;
+  }
+
+  .nav-btn:focus {
+    @apply text-gray-900 bg-blue-200 outline-none;
+  }

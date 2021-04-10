@@ -1,0 +1,15 @@
+  .border-red {
+    @apply border-yellow-500;
+  }
+
+  .border-green {
+    @apply border-green-500;
+  }
+
+  .border-red {
+    @apply border-red-500;
+  }
+
+  .border-blue {
+    @apply border-green-500;
+  }

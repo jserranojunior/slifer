@@ -1,0 +1,35 @@
+
+
+  .table-tail {
+    @apply table-auto w-full;
+  }
+
+  .table-tail > tbody > tr,
+  .table-tail > thead > tr {
+    @apply border-b border-gray-100 my-1 p-1;
+  }
+
+  .table-tail > tbody > tr > td,
+  .table-tail > thead > tr > td {
+    @apply px-1;
+  }
+
+  .table-tail > tbody > tr:hover {
+    @apply bg-blue-200 cursor-pointer;
+  }
+
+  .table-border-r > thead > tr > th,
+  .table-border-r > tbody > tr > td {
+    @apply border-r;
+  }
+
+  .table-striped-tail > tbody > tr:nth-child(odd) {
+    @apply bg-blue-100;
+  }
+  .table-bordered-tail,
+  .table-bordered-tail > thead > tr,
+  .table-bordered-tail > tbody > tr,
+  .table-bordered-tail > thead > tr > th,
+  .table-bordered-tail > tbody > tr > td {
+    @apply border  border-gray-300;
+  }

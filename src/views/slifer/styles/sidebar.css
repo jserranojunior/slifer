@@ -1,0 +1,41 @@
+
+  .sidebar-open {
+    @apply w-6/12;
+  }
+
+  .sidebar-close > div > div > nav > a > span.text-menu {
+    @apply hidden;
+  }
+
+  @screen sm {
+    .sidebar-open {
+      @apply w-4/12;
+    }
+    .sidebar-close {
+      @apply w-2/12;
+    }
+  }
+  @screen md {
+    .sidebar-open {
+      @apply w-1/5 bg-blue-300;
+    }
+    .sidebar-close {
+      @apply w-2/12;
+    }
+  }
+  @screen lg {
+    .sidebar-open {
+      @apply w-1/5 bg-red-300;
+    }
+    .sidebar-close {
+      @apply w-1/12;
+    }
+  }
+  @screen xl {
+    .sidebar-open {
+      @apply w-3/12;
+    }
+    .sidebar-close {
+      @apply w-1/12;
+    }
+  }
