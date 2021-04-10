@@ -1,3 +1,4 @@
+import styles from "./components/styles.vue";
 import btn from "./components/btn.vue";
 import spinner from "./components/spinner.vue";
 import callout from "./components/callout.vue";
@@ -11,6 +12,7 @@ import layout from "./layouts/layout.vue";
 
 export default {
   install(Vue) {
+    Vue.component("SStyle", styles);
     Vue.component("SBtn", btn);
     Vue.component("SSpinner", spinner);
     Vue.component("SCallout", callout);

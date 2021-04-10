@@ -8,7 +8,6 @@
 
 // import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
-import envCompatible from "vite-plugin-env-compatible";
 
 // // https://vitejs.dev/config/
 // export default defineConfig({
@@ -18,7 +17,7 @@ import envCompatible from "vite-plugin-env-compatible";
 export default ({ command }) => {
   if (command === "serve") {
     return {
-      plugins: [vue(), envCompatible()],
+      plugins: [vue()],
       resolve: {
         alias: [{ find: "@", replacement: "/src" }],
       },
