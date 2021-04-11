@@ -1,15 +1,15 @@
   .callout-yellow {
-    @apply bg-yellow-100 border-l-4 border-yellow-500 mt-3 p-2 rounded shadow font-bold;
+    @apply bg-yellow-100 border-l-4 border-yellow-500 p-1 rounded shadow font-bold;
   }
 
   .callout-red {
-    @apply bg-red-100 border-l-4 border-red-500 mt-3 p-2 rounded shadow font-bold;
+    @apply bg-red-100 border-l-4 border-red-500 p-1 rounded shadow font-bold;
   }
 
   .callout-green {
-    @apply bg-green-100 border-l-4 border-green-500 mt-3 p-2 rounded shadow font-bold;
+    @apply bg-green-100 border-l-4 border-green-500 p-1 rounded shadow font-bold;
   }
 
     .callout-blue {
-    @apply bg-blue-100 border-l-4 border-blue-500 mt-3 p-2 rounded shadow font-bold;
+    @apply bg-blue-100 border-l-4 border-blue-500 p-1 rounded shadow font-bold;
   }

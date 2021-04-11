@@ -1,58 +1,123 @@
 <template>
   <div class="flex">
-    <div class="w-1/2">
-      <div class="p-2">Buttons</div>
-      <div class="p-2">
-        <SBtn value="Botão Red" color="red" :class="'mx-1'" />
-        <SBtn value="Botão Yellow" color="yellow" :class="'mx-1'" />
-        <SBtn value="Botão Blue" color="blue" :class="'mx-1'" />
-        <SBtn value="Botão Green" color="green" :class="'mx-1'" />
-      </div>
+    <div class="w-1/2 px-1 mt-2">
+      <SCard>
+        <template v-slot:header>
+          <div>Buttons</div>
+        </template>
+        <template v-slot:body>
+          <div class="flex flex-wrap">
+            <div class="w-1/3 px-1 mt-1">
+              <SBtn value="Botão Red" color="red" />
+            </div>
+            <div class="w-1/3 px-1 mt-1">
+              <SBtn value="Botão Yellow" color="yellow" />
+            </div>
+            <div class="w-1/3 px-1 mt-1">
+              <SBtn value="Botão Blue" color="blue" />
+            </div>
+            <div class="w-1/3 px-1 mt-1">
+              <SBtn value="Botão Green" color="green" />
+            </div>
+            <div class="w-1/3 px-1 mt-1">
+              <SBtn value="Botão Gray" color="gray" />
+            </div>
+            <div class="w-1/3 px-1 mt-1">
+              <SBtn value="Botão Ice" color="ice" />
+            </div>
+            <div class="w-1/3 px-1 mt-1">
+              <SBtn value="Botão Transparente" color="btn" />
+            </div>
+          </div>
+        </template>
+      </SCard>
     </div>
-    <div class="w-1/2">
-      <div class="mt-1 p-2">Callouts</div>
-      <div class="p-2">
-        <SCallout value="Callout Red" color="red" />
-        <SCallout value="Callout yellow" color="yellow" />
-        <SCallout value="Callout Green" color="green" />
-
-        <SCallout value="Callout Blue" color="blue" />
-      </div>
+    <div class="w-1/2 px-1 mt-2">
+      <SCard>
+        <template v-slot:header>
+          <div>Callouts</div>
+        </template>
+        <template v-slot:body>
+          <div class="flex flex-wrap">
+            <div class="w-1/2 px-1 mt-2">
+              <SCallout value="Callout Red" color="red" />
+            </div>
+            <div class="w-1/2 px-1 mt-2">
+              <SCallout value="Callout yellow" color="yellow" />
+            </div>
+            <div class="w-1/2 px-1 mt-2">
+              <SCallout value="Callout Green" color="green" />
+            </div>
+            <div class="w-1/2 px-1 mt-2">
+              <SCallout value="Callout Blue" color="blue" />
+            </div>
+          </div>
+        </template>
+      </SCard>
     </div>
   </div>
 
   <div class="flex">
-    <div class="w-1/2">
-      <div class="mt-1 p-2">Card</div>
-      <div class="p-2 bg-gray-200">
-        <SCard
-          header="Titulo"
-          body="Corpo"
-          footer="Rodapé"
-          classHeader=""
-          classBody=""
-          classFooter=""
-        />
-      </div>
+    <div class="w-1/2 px-1 mt-2">
+      <SCard>
+        <template v-slot:header>
+          <div>Card</div>
+        </template>
+        <template v-slot:body>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitiosum est enim in
+            dividendo partem in genere numerare. Stuprata per vim Lucretia a regis filio
+            testata civis se ipsa interemit. At vero illa, quae Peripatetici, quae Stoici
+            dicunt, se
+          </p>
+        </template>
+        <template v-slot:footer>
+          <p>
+            Duo Reges: constructio interrete. Quid est, quod ab ea absolvi et perfici
+            debeat? Itaque sensibus rationem adiunxit et ratione effecta sensus non
+            reliquit. In quibus doctissimi illi veteres inesse quiddam caeleste et divinum
+            putaverunt.
+          </p>
+        </template>
+      </SCard>
     </div>
-    <div class="w-1/2">
-      <div class="mt-1 p-2">Form</div>
-      <div class="p-2">
-        <SInputT name="SName" v-model="inputText" />
-        <SInputN name="SNumber" v-model="inputNumber" />
-      </div>
-      <div class="p-2">
-        <button class="btn-blue" @click="inputNumber = 155">Mudando</button>
-        {{ inputText }} - {{ inputNumber }} - {{ inputSelect }}
-        <hr />
-        SELECT
-        <SInputS
-          name="SSelect"
-          v-model="inputSelect"
-          :options="optionsSelect"
-          :change="methodSelect"
-        />
-      </div>
+    <div class="w-1/2 px-1 mt-2">
+      <SCard>
+        <template v-slot:header>
+          <div>Form</div>
+        </template>
+        <template v-slot:body>
+          <SInputT name="SName" v-model="inputText" />
+          <SInputN name="SNumber" v-model="inputNumber" />
+          <SInputS
+            name="SSelect"
+            v-model="inputSelect"
+            :options="optionsSelect"
+            :change="methodSelect"
+          />
+        </template>
+      </SCard>
+
+      <SCard>
+        <template v-slot:header>
+          <div>Retorno Inputs</div>
+        </template>
+        <template v-slot:body>
+          {{ inputText }} - {{ inputNumber }} - {{ inputSelect }}
+        </template>
+      </SCard>
+    </div>
+  </div>
+  <div class="flex">
+    <div class="w-1/2 px-1 mt-2">
+      <SCard>
+        <template v-slot:header>
+          <div>Funções</div>
+        </template>
+        <template v-slot:body>
+          <SBtn color="blue" @click="inputNumber = 155" value="Mudar Valor Number" />
+        </template>
+      </SCard>
     </div>
   </div>
 </template>

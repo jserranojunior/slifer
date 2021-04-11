@@ -1,5 +1,5 @@
 <template>
-  <button :class="`btn-${color}`">{{ value }}</button>
+  <div :class="`btn-${color}`">{{ value }}</div>
 </template>
 <script>
 export default {

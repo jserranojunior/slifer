@@ -15,7 +15,7 @@
           <slot name="sidebar"></slot>
         </div>
       </div>
-      <div class="sm:w-8/12 md:w-10/12 lg:w-11/12 xl:w-11/12 p-4 mx-auto text-gray-500">
+      <div class="sm:w-8/12 md:w-10/12 lg:w-11/12 xl:w-11/12 p-1 mx-auto text-gray-500">
         <slot name="mainpage"></slot>
       </div>
     </div>

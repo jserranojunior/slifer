@@ -1,5 +1,5 @@
 .btn-blue {
-  @apply border border-indigo-500 bg-indigo-500 text-white rounded-md py-1 px-2 mt-2 transition duration-500  select-none;
+  @apply border-indigo-500 bg-indigo-500 text-white rounded-md py-1 px-2  text-center;
 }
 
 .btn-blue:focus {
@@ -9,7 +9,7 @@
   @apply bg-indigo-600 cursor-pointer;
 }
 .btn-yellow {
-  @apply border border-yellow-500 bg-yellow-500 text-white rounded-md py-1 px-2 mt-2 transition duration-500  select-none;
+  @apply border-yellow-500 bg-yellow-500 text-white rounded-md py-1 px-2  text-center;
 }
 
 .btn-yellow:focus {
@@ -19,7 +19,7 @@
   @apply bg-yellow-600 cursor-pointer;
 }
 .btn-red {
-  @apply border border-red-500 bg-red-500 text-white rounded-md py-1 px-2 mt-2 transition duration-500  select-none;
+  @apply border-red-500 bg-red-500 text-white rounded-md py-1 px-2  text-center;
 }
 
 .btn-red:focus {
@@ -29,7 +29,7 @@
   @apply bg-red-600 cursor-pointer;
 }
 .btn-green {
-  @apply border border-green-500 bg-green-500 text-white rounded-md py-1 px-2 mt-2 transition duration-500  select-none;
+  @apply border-green-500 bg-green-500 text-white rounded-md py-1 px-2  text-center;
 }
 .btn-green:focus {
   @apply outline-none shadow-inner cursor-pointer;
@@ -38,12 +38,33 @@
   @apply bg-green-600 cursor-pointer;
 }
   .btn-gray {
-    @apply bg-gray-700 text-white font-bold py-1 px-2 rounded cursor-pointer text-center;
+    @apply border-gray-500 bg-gray-500 text-white rounded-md py-1 px-2  text-center;
   }
 
+  .btn-gray:focus {
+  @apply outline-none shadow-inner cursor-pointer;
+}
+.btn-gray:hover {
+  @apply bg-gray-600 cursor-pointer;
+}
+
+  .btn-ice {
+    @apply border-gray-200 bg-gray-200 text-gray-800 rounded-md py-1 px-2  text-center;
+  }
+
+  .btn-ice:focus {
+  @apply outline-none shadow-inner cursor-pointer;
+}
+.btn-ice:hover {
+  @apply bg-gray-200 cursor-pointer;
+}
+
 .btn {
-  @apply py-1 px-2 rounded text-center;
+  @apply  text-black rounded-md py-1 px-2  text-center;
+}
+.btn-btn {
+  @apply  text-black rounded-md py-1 px-2  text-center;
 }
 .btn-sm {
-  @apply p-1 rounded text-center;
+  @apply p-1;
 }
