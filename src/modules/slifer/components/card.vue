@@ -11,33 +11,11 @@
     <div :class="`card-footer  ${classFooter}`">
       <slot name="footer"></slot>
     </div>
-
-    <!-- <div :class="">
-      {{ header }}
-    </div> -->
-    <!-- <div :class="`card-body  ${classBody}`">
-      {{ body }}
-    </div> -->
-    <!-- <div :class="`card-footer  ${classFooter}`">
-      {{ footer }}
-    </div> -->
   </div>
 </template>
 <script>
 export default {
   props: {
-    // header: {
-    //   type: String,
-    //   require: false,
-    // },
-    // body: {
-    //   type: String,
-    //   require: false,
-    // },
-    // footer: {
-    //   type: String,
-    //   require: false,
-    // },
     classHeader: {
       type: String,
       require: false,
