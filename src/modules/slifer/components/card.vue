@@ -41,14 +41,17 @@ export default {
     classHeader: {
       type: String,
       require: false,
+      default: "",
     },
     classBody: {
       type: String,
       require: false,
+      default: "",
     },
     classFooter: {
       type: String,
       require: false,
+      default: "",
     },
   },
   setup() {},
