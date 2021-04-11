@@ -1,5 +1,5 @@
 <template>
-  <div :class="`callout-${color}`">{{ value }}</div>
+  <div :class="`callout-${color}`" v-html="value"></div>
 </template>
 <script>
 export default {

@@ -8,7 +8,7 @@
         <template v-slot:body>
           <div class="flex flex-wrap">
             <div class="w-1/3 px-1 mt-1">
-              <SBtn value="Botão Red" color="red" />
+              <SBtn value="<i class='far fa-file-alt'></i> Botão Red" color="red" />
             </div>
             <div class="w-1/3 px-1 mt-1">
               <SBtn value="Botão Yellow" color="yellow" />

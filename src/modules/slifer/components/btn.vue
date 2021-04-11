@@ -1,5 +1,5 @@
 <template>
-  <div :class="`btn-${color}`">{{ value }}</div>
+  <div :class="`btn-${color}`" v-html="value"></div>
 </template>
 <script>
 export default {
