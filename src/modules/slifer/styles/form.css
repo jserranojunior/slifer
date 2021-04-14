@@ -21,8 +21,11 @@
   .form{
     @apply  mt-1 block w-full py-1 px-2 border border-gray-300 bg-white rounded-md shadow-sm  sm:text-sm ;
   }
+    .form:hover{
+    @apply  cursor-pointer;
+  }
   .form:focus {
-    @apply   outline-none ring-indigo-500 border-indigo-200;
+    @apply   outline-none ring-indigo-500 border-indigo-200 cursor-text;
   }
 
 

@@ -1,3 +1,6 @@
-  .dropdown:hover > .dropdown-content {
-    @apply block;
+  .drop-item{
+      @apply w-full text-left text-white  rounded-md p-1 ;
+  }
+    .drop-item:hover{
+      @apply  hover:bg-gray-300 hover:text-blue-600;
   }

@@ -1,54 +1,73 @@
 <template>
   <div class="flex">
-    <div class="w-1/2 px-1 mt-2">
+    <div class="w-1/2 pr-1 mt-2">
       <SCard>
         <template v-slot:header>
           <div>Buttons</div>
         </template>
         <template v-slot:body>
           <div class="flex flex-wrap">
-            <div class="w-1/3 px-1 mt-1">
+            <div class="w-1/3 pr-1 mt-1">
               <SBtn value="<i class='far fa-file-alt'></i> Botão Red" color="red" />
             </div>
-            <div class="w-1/3 px-1 mt-1">
+            <div class="w-1/3 pr-1 mt-1">
               <SBtn value="Botão Yellow" color="yellow" />
             </div>
-            <div class="w-1/3 px-1 mt-1">
+            <div class="w-1/3 pr-1 mt-1">
               <SBtn value="Botão Blue" color="blue" />
             </div>
-            <div class="w-1/3 px-1 mt-1">
+            <div class="w-1/3 pr-1 mt-1">
               <SBtn value="Botão Green" color="green" />
             </div>
-            <div class="w-1/3 px-1 mt-1">
+            <div class="w-1/3 pr-1 mt-1">
               <SBtn value="Botão Gray" color="gray" />
             </div>
-            <div class="w-1/3 px-1 mt-1">
+            <div class="w-1/3 pr-1 mt-1">
               <SBtn value="Botão Ice" color="ice" />
             </div>
-            <div class="w-1/3 px-1 mt-1">
+            <div class="w-1/3 pr-1 mt-1">
               <SBtn value="Botão Transparente" color="btn" />
+            </div>
+
+            <div class="w-1/3 pr-1 mt-1">
+              <SDropdown value="Dropdown button">
+                <template v-slot:itens>
+                  <a class="drop-item" href="#">Action</a>
+                  <a class="drop-item" href="#">Another action</a>
+                  <a class="drop-item" href="#">Something else here</a>
+                </template>
+              </SDropdown>
+            </div>
+            <div class="w-1/3 pr-1 mt-1">
+              <SDropdown value="Dropdown button" color="red">
+                <template v-slot:itens>
+                  <a class="drop-item" href="#">Action</a>
+                  <a class="drop-item" href="#">Another action</a>
+                  <a class="drop-item" href="#">Something else here</a>
+                </template>
+              </SDropdown>
             </div>
           </div>
         </template>
       </SCard>
     </div>
-    <div class="w-1/2 px-1 mt-2">
+    <div class="w-1/2 pr-1 mt-2">
       <SCard>
         <template v-slot:header>
           <div>Callouts</div>
         </template>
         <template v-slot:body>
           <div class="flex flex-wrap">
-            <div class="w-1/2 px-1 mt-2">
+            <div class="w-1/2 pr-1 mt-2">
               <SCallout value="Callout Red" color="red" />
             </div>
-            <div class="w-1/2 px-1 mt-2">
+            <div class="w-1/2 pr-1 mt-2">
               <SCallout value="Callout yellow" color="yellow" />
             </div>
-            <div class="w-1/2 px-1 mt-2">
+            <div class="w-1/2 pr-1 mt-2">
               <SCallout value="Callout Green" color="green" />
             </div>
-            <div class="w-1/2 px-1 mt-2">
+            <div class="w-1/2 pr-1 mt-2">
               <SCallout value="Callout Blue" color="blue" />
             </div>
           </div>
@@ -58,7 +77,7 @@
   </div>
 
   <div class="flex">
-    <div class="w-1/2 px-1 mt-2">
+    <div class="w-1/2 pr-1 mt-2">
       <SCard>
         <template v-slot:header>
           <div>Card</div>
@@ -81,7 +100,7 @@
         </template>
       </SCard>
     </div>
-    <div class="w-1/2 px-1 mt-2">
+    <div class="w-1/2 pr-1 mt-2">
       <SCard>
         <template v-slot:header>
           <div>Form</div>
@@ -109,7 +128,7 @@
     </div>
   </div>
   <div class="flex">
-    <div class="w-1/2 px-1 mt-2">
+    <div class="w-1/2 pr-1 mt-2">
       <SCard>
         <template v-slot:header>
           <div>Funções</div>
@@ -118,6 +137,18 @@
           <SBtn color="blue" @click="inputNumber = 155" value="Mudar Valor Number" />
         </template>
       </SCard>
+    </div>
+  </div>
+
+  <div class="flex">
+    <div class="w-1/2 pr-1 mt-2">
+      <SDropdown value="Dropdown button">
+        <template v-slot:itens>
+          <a class="drop-item" href="#">Action</a>
+          <a class="drop-item" href="#">Another action</a>
+          <a class="drop-item" href="#">Something else here</a>
+        </template>
+      </SDropdown>
     </div>
   </div>
 </template>

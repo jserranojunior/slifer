@@ -1,12 +1,12 @@
   .card {
-    @apply bg-white rounded w-full p-2 shadow;
+    @apply bg-white rounded w-full p-1 shadow;
   }
   .card-header {
-    @apply  border-b border-gray-200 pb-1 text-sm;
+    @apply  border-b border-gray-200 p-1 text-sm;
   }
   .card-body {
-    @apply border-b border-gray-200 py-1;
+    @apply  border-gray-200 p-1;
   }
   .card-footer {
-    @apply py-1;
+    @apply border-t  py-1;
   }

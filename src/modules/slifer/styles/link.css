@@ -1,6 +1,7 @@
 a {
-  @apply text-blue-800;
+  @apply text-blue-400;
 }
 a:hover {
   @apply text-blue-600;
 }
+

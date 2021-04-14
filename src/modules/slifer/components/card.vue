@@ -1,14 +1,14 @@
 <template>
   <div class="card">
-    <div :class="`card-header ${classHeader}`">
+    <div :class="`card-header ${classHeader}`" v-if="this.$slots.header">
       <slot name="header"></slot>
     </div>
 
-    <div :class="`card-body  ${classBody}`">
+    <div :class="`card-body  ${classBody}`" v-if="this.$slots.body">
       <slot name="body"></slot>
     </div>
 
-    <div :class="`card-footer  ${classFooter}`">
+    <div :class="`card-footer  ${classFooter}`" v-if="this.$slots.footer">
       <slot name="footer"></slot>
     </div>
   </div>

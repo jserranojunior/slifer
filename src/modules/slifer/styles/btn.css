@@ -1,5 +1,5 @@
 .btn-blue {
-  @apply border-indigo-500 bg-indigo-500 text-white rounded-md py-1 px-2  text-center;
+  @apply border-indigo-500 bg-indigo-500 text-white rounded-md py-1 px-2  text-center text-sm;
 }
 
 .btn-blue:focus {
@@ -9,7 +9,7 @@
   @apply bg-indigo-600 cursor-pointer;
 }
 .btn-yellow {
-  @apply border-yellow-500 bg-yellow-500 text-white rounded-md py-1 px-2  text-center;
+  @apply border-yellow-500 bg-yellow-500 text-white rounded-md py-1 px-2  text-center text-sm;
 }
 
 .btn-yellow:focus {
@@ -19,7 +19,7 @@
   @apply bg-yellow-600 cursor-pointer;
 }
 .btn-red {
-  @apply border-red-500 bg-red-500 text-white rounded-md py-1 px-2  text-center;
+  @apply border-red-500 bg-red-500 text-white rounded-md py-1 px-2  text-center text-sm;
 }
 
 .btn-red:focus {
@@ -29,7 +29,7 @@
   @apply bg-red-600 cursor-pointer;
 }
 .btn-green {
-  @apply border-green-500 bg-green-500 text-white rounded-md py-1 px-2  text-center;
+  @apply border-green-500 bg-green-500 text-white rounded-md py-1 px-2  text-center text-sm text-sm;
 }
 .btn-green:focus {
   @apply outline-none shadow-inner cursor-pointer;
@@ -38,7 +38,7 @@
   @apply bg-green-600 cursor-pointer;
 }
   .btn-gray {
-    @apply border-gray-500 bg-gray-500 text-white rounded-md py-1 px-2  text-center;
+    @apply border-gray-500 bg-gray-500 text-white rounded-md py-1 px-2  text-center text-sm;
   }
 
   .btn-gray:focus {
@@ -49,7 +49,7 @@
 }
 
   .btn-ice {
-    @apply border-gray-200 bg-gray-200 text-gray-800 rounded-md py-1 px-2  text-center;
+    @apply border-gray-200 bg-gray-200 text-gray-800 rounded-md py-1 px-2  text-center text-sm;
   }
 
   .btn-ice:focus {
@@ -60,11 +60,14 @@
 }
 
 .btn {
-  @apply  text-black rounded-md py-1 px-2  text-center;
+  @apply  text-black rounded-md py-1 px-2  text-center text-sm;
 }
 .btn-btn {
-  @apply  text-black rounded-md py-1 px-2  text-center;
+  @apply  text-black rounded-md py-1 px-2  text-center text-sm;
+}
+.btn-btn:hover {
+  @apply  cursor-pointer;
 }
 .btn-sm {
-  @apply p-1;
+  @apply p-1  text-sm;
 }

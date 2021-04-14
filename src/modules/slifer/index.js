@@ -6,6 +6,7 @@ import card from "./components/card.vue";
 import inputT from "./components/inputT.vue";
 import inputN from "./components/inputN.vue";
 import inputS from "./components/inputS.vue";
+import dropdown from "./components/dropdown.vue";
 
 // Layouts
 import layout from "./layouts/layout.vue";
@@ -14,6 +15,8 @@ export default {
   install(Vue) {
     Vue.component("SStyle", styles);
     Vue.component("SBtn", btn);
+    Vue.component("SDropdown", dropdown);
+
     Vue.component("SSpinner", spinner);
     Vue.component("SCallout", callout);
     Vue.component("SCard", card);
