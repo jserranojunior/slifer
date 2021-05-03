@@ -7,6 +7,8 @@ import inputT from "./components/inputT.vue";
 import inputN from "./components/inputN.vue";
 import inputS from "./components/inputS.vue";
 import dropdown from "./components/dropdown.vue";
+import toggledark from "./components/toggledark.vue";
+import togglesidebar from "./components/togglesidebar.vue";
 
 // Layouts
 import layout from "./layouts/layout.vue";
@@ -24,5 +26,7 @@ export default {
     Vue.component("SInputN", inputN);
     Vue.component("SInputS", inputS);
     Vue.component("SLayout", layout);
+    Vue.component("SToggledark", toggledark);
+    Vue.component("STogglesidebar", togglesidebar);
   },
 };

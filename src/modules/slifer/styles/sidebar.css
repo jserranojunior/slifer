@@ -12,7 +12,7 @@
       @apply w-4/12;
     }
     .sidebar-close {
-      @apply w-2/12;
+         @apply hidden;
     }
   }
   @screen md {
@@ -20,7 +20,8 @@
       @apply w-1/5 bg-blue-300;
     }
     .sidebar-close {
-      @apply w-2/12;
+          @apply hidden;
+
     }
   }
   @screen lg {
@@ -28,7 +29,8 @@
       @apply w-1/5 bg-red-300;
     }
     .sidebar-close {
-      @apply w-1/12;
+          @apply hidden;
+
     }
   }
   @screen xl {
@@ -36,6 +38,7 @@
       @apply w-3/12;
     }
     .sidebar-close {
-      @apply w-1/12;
+          @apply hidden;
+
     }
   }

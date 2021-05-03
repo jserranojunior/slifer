@@ -13,4 +13,5 @@ export default {
 @import "../styles/card.css";
 @import "../styles/table.css";
 @import "../styles/dropdown.css";
+@import "../styles/sidebar.css";
 </style>

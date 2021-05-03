@@ -1,6 +1,6 @@
 <template>
   <div class="flex">
-    <div class="w-1/2 pr-1 mt-2">
+    <div class="w-1/2 pr-1">
       <SCard>
         <template v-slot:header>
           <div>Buttons</div>
@@ -51,7 +51,7 @@
         </template>
       </SCard>
     </div>
-    <div class="w-1/2 pr-1 mt-2">
+    <div class="w-1/2">
       <SCard>
         <template v-slot:header>
           <div>Callouts</div>
@@ -100,7 +100,7 @@
         </template>
       </SCard>
     </div>
-    <div class="w-1/2 pr-1 mt-2">
+    <div class="w-1/2 mt-2">
       <SCard>
         <template v-slot:header>
           <div>Form</div>
@@ -117,7 +117,7 @@
         </template>
       </SCard>
 
-      <SCard>
+      <SCard class="mt-2">
         <template v-slot:header>
           <div>Retorno Inputs</div>
         </template>
@@ -128,7 +128,7 @@
     </div>
   </div>
   <div class="flex">
-    <div class="w-1/2 pr-1 mt-2">
+    <div class="w-1/2 mt-2">
       <SCard>
         <template v-slot:header>
           <div>Funções</div>
@@ -137,18 +137,6 @@
           <SBtn color="blue" @click="inputNumber = 155" value="Mudar Valor Number" />
         </template>
       </SCard>
-    </div>
-  </div>
-
-  <div class="flex">
-    <div class="w-1/2 pr-1 mt-2">
-      <SDropdown value="Dropdown button">
-        <template v-slot:itens>
-          <a class="drop-item" href="#">Action</a>
-          <a class="drop-item" href="#">Another action</a>
-          <a class="drop-item" href="#">Something else here</a>
-        </template>
-      </SDropdown>
     </div>
   </div>
 </template>

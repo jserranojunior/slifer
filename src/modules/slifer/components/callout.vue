@@ -1,5 +1,5 @@
 <template>
-  <div :class="`callout-${color}`" v-html="value"></div>
+  <div :class="`callout-${color} dark:text-gray-500`" v-html="value"></div>
 </template>
 <script>
 export default {
