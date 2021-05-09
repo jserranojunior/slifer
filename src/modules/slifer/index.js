@@ -9,6 +9,8 @@ import inputS from "./components/inputS.vue";
 import dropdown from "./components/dropdown.vue";
 import toggledark from "./components/toggledark.vue";
 import togglesidebar from "./components/togglesidebar.vue";
+import modal from "./components/modal.vue";
+import toast from "./components/toast.vue";
 
 // Layouts
 import layout from "./layouts/layout.vue";
@@ -28,5 +30,7 @@ export default {
     Vue.component("SLayout", layout);
     Vue.component("SToggledark", toggledark);
     Vue.component("STogglesidebar", togglesidebar);
+    Vue.component("SModal", modal);
+    Vue.component("SToast", toast);
   },
 };

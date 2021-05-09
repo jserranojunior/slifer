@@ -128,13 +128,54 @@
     </div>
   </div>
   <div class="flex">
-    <div class="w-1/2 mt-2">
+    <div class="w-1/2 mt-2 pr-1">
       <SCard>
         <template v-slot:header>
           <div>Funções</div>
         </template>
         <template v-slot:body>
           <SBtn color="blue" @click="inputNumber = 155" value="Mudar Valor Number" />
+        </template>
+      </SCard>
+    </div>
+    <div class="w-1/2 mt-2">
+      <SModal name="Nova Modal" v-if="showModal">
+        <template v-slot:header>
+          <div>Modal para testar as novas funções</div>
+        </template>
+        <template v-slot:body>
+          <SBtn color="blue" @click="inputNumber = 155" value="Mudar Valor Number" />
+        </template>
+      </SModal>
+      <SCard>
+        <template v-slot:header>
+          <div>Modais</div>
+        </template>
+        <template v-slot:body>
+          <SBtn color="green" @click="showModal = true" value="Abrir Modal" />
+        </template>
+      </SCard>
+    </div>
+  </div>
+  <div class="flex">
+    <div class="w-1/2 mt-2 pr-1">
+      <SCard class="mt-2">
+        <template v-slot:header>
+          <div>Toast</div>
+        </template>
+        <template v-slot:body>
+          <SToast :notifications="notifications"></SToast>
+          <SBtn
+            value="Adicionar notifications"
+            color="green"
+            @click="addNotification()"
+            class="my-1"
+          ></SBtn>
+          <SBtn
+            value="Excluir notifications"
+            color="red"
+            @click="removeNotification()"
+          ></SBtn>
         </template>
       </SCard>
     </div>
@@ -145,6 +186,8 @@ export default {
   name: "Home",
   data() {
     return {
+      notifications: [],
+      showModal: false,
       inputText: "Texto usando input",
       inputNumber: 15,
       inputSelect: "",
@@ -159,6 +202,16 @@ export default {
   methods: {
     methodSelect() {
       console.log(`Meu número é: ${this.inputNumber} e meu select é ${this.inputSelect}`);
+    },
+    removeNotification() {
+      this.notifications = [];
+    },
+    addNotification() {
+      this.notifications.push({
+        body: "corpo do titulo",
+        title: "Toast Notification",
+        color: "red",
+      });
     },
   },
 };
