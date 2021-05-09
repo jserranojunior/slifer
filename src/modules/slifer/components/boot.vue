@@ -1,7 +1,9 @@
-<template>style</template>
+<template>
+  <div class="hidden">boot</div>
+</template>
 <script>
 export default {
-  name: "styles",
+  name: "boot",
 };
 </script>
 <style>

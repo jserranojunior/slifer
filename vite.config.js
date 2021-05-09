@@ -27,5 +27,18 @@ export default ({ command }) => {
         hmr: { host: "localhost", port: 3000 },
       },
     };
+  } else {
+    return {
+      plugins: [vue()],
+      resolve: {
+        alias: [{ find: "@", replacement: "/src" }],
+      },
+      server: {
+        host: "0.0.0.0",
+        port: 5000,
+        https: true,
+        hmr: { host: "slifer.alvitre.com.br", port: 443 },
+      },
+    };
   }
 };
