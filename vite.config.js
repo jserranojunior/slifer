@@ -39,6 +39,9 @@ export default ({ command }) => {
         https: true,
         hmr: { host: "slifer.alvitre.com.br", port: 443 },
       },
+      build: {
+        chunkSizeWarningLimit: 2000,
+      },
     };
   }
 };

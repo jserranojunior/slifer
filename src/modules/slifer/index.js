@@ -11,6 +11,7 @@ import toggledark from "./components/toggledark.vue";
 import togglesidebar from "./components/togglesidebar.vue";
 import modal from "./components/modal.vue";
 import toast from "./components/toast.vue";
+import table from "./components/table.vue";
 
 // Layouts
 import layout from "./layouts/layout.vue";
@@ -32,5 +33,6 @@ export default {
     Vue.component("STogglesidebar", togglesidebar);
     Vue.component("SModal", modal);
     Vue.component("SToast", toast);
+    Vue.component("STable", table);
   },
 };

@@ -60,10 +60,10 @@
 }
 
 .btn {
-  @apply  text-black rounded-md py-1 px-2  text-center text-sm;
+  @apply  text-black rounded-md py-1 px-2  text-center text-sm dark:text-gray-100;
 }
 .btn-btn {
-  @apply  text-black rounded-md py-1 px-2  text-center text-sm;
+  @apply  text-black rounded-md py-1 px-2  text-center text-sm dark:text-gray-100;
 }
 .btn-btn:hover {
   @apply  cursor-pointer;

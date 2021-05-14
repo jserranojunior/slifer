@@ -1,6 +1,6 @@
 {
   "name": "slifer",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "main": "src/modules/slifer/index.js",
   "scripts": {
     "dev": "vite",
@@ -8,15 +8,16 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "element-plus": "*",
     "vue": "^3.0.5",
     "vue-router": "^4.0.3"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.2.1",
     "@vue/compiler-sfc": "^3.0.5",
+    "autoprefixer": "^9.8.6",
     "postcss": "^8.2.9",
     "tailwindcss": "^2.0.4",
-    "autoprefixer": "^9.8.6",
     "vite": "^2.1.5",
     "vite-plugin-env-compatible": "^0.2.1"
   }

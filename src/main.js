@@ -4,4 +4,7 @@ import router from "./router/index.js";
 import "./assets/styles/tail.css";
 import slifer from "./modules/slifer/index.js";
 
-createApp(App).use(router).use(slifer).mount("#app");
+import ElementPlus from "element-plus";
+import "element-plus/lib/theme-chalk/index.css";
+
+createApp(App).use(router).use(slifer).use(ElementPlus).mount("#app");
