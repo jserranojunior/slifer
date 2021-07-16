@@ -4,6 +4,7 @@ import spinner from "./components/spinner.vue";
 import callout from "./components/callout.vue";
 import card from "./components/card.vue";
 import inputT from "./components/inputT.vue";
+import inputE from "./components/inputE.vue";
 import inputN from "./components/inputN.vue";
 import inputS from "./components/inputS.vue";
 import dropdown from "./components/dropdown.vue";
@@ -26,6 +27,7 @@ export default {
     Vue.component("SCallout", callout);
     Vue.component("SCard", card);
     Vue.component("SInputT", inputT);
+        Vue.component("SInputE", inputE);
     Vue.component("SInputN", inputN);
     Vue.component("SInputS", inputS);
     Vue.component("SLayout", layout);

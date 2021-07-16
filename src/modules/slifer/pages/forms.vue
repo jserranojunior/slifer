@@ -7,6 +7,7 @@
         </template>
         <template v-slot:body>
           <SInputT name="SName" v-model="inputText" />
+          <SInputE name="SEmail" v-model="inputEmail" />
           <SInputN name="SNumber" v-model="inputNumber" />
           <SInputS
             name="SSelect"
@@ -49,6 +50,7 @@ export default {
       notifications: [],
       showModal: false,
       inputText: "Texto usando input",
+      inputEmail: "jorgeserranojunior@gmail.com",
       inputNumber: 15,
       inputSelect: "",
       optionsSelect: [
