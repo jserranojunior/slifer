@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div :class="`card ${classCard}`">
     <div :class="`card-header ${classHeader}`" v-if="this.$slots.header">
       <slot name="header"></slot>
     </div>
@@ -16,6 +16,11 @@
 <script>
 export default {
   props: {
+    classCard: {
+      type: String,
+      require: false,
+      default: "",
+    },
     classHeader: {
       type: String,
       require: false,
