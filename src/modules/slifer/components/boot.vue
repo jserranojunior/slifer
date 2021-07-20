@@ -12,7 +12,7 @@ export default {
 @import "../styles/nav.css";
 @import "../styles/form.css";
 @import "../styles/callout.css";
-@import "../styles/card.css";
+/* @import "../styles/card.css"; */
 @import "../styles/table.css";
 @import "../styles/dropdown.css";
 @import "../styles/sidebar.css";

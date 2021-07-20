@@ -7,10 +7,10 @@
         </template>
         <template v-slot:body>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitiosum est enim in
-            dividendo partem in genere numerare. Stuprata per vim Lucretia a regis filio
-            testata civis se ipsa interemit. At vero illa, quae Peripatetici, quae Stoici
-            dicunt, se
+            I Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitiosum est enim
+            in dividendo partem in genere numerare. Stuprata per vim Lucretia a regis
+            filio testata civis se ipsa interemit. At vero illa, quae Peripatetici, quae
+            Stoici dicunt, se
           </p>
         </template>
         <template v-slot:footer>
@@ -60,3 +60,18 @@ export default {
   },
 };
 </script>
+
+<style lang="css">
+.card {
+  @apply bg-green-500 rounded w-full p-1  shadow-xl dark:bg-gray-800 dark:text-gray-100;
+}
+.card-header {
+  @apply border-b border-gray-200 dark:border-gray-500 p-1 text-sm;
+}
+.card-body {
+  @apply border-gray-200 dark:border-gray-500 p-1;
+}
+.card-footer {
+  @apply border-t  py-1;
+}
+</style>
