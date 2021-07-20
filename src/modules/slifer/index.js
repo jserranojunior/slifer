@@ -1,4 +1,3 @@
-import boot from "./components/boot.vue";
 import btn from "./components/btn.vue";
 import spinner from "./components/spinner.vue";
 import callout from "./components/callout.vue";
@@ -20,7 +19,6 @@ import layout from "./layouts/layout.vue";
 
 export default {
   install(Vue) {
-    Vue.component("SBoot", boot);
     Vue.component("SBtn", btn);
     Vue.component("SDropdown", dropdown);
 

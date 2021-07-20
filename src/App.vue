@@ -32,3 +32,6 @@ export default {
   name: "App",
 };
 </script>
+<style>
+@import "./assets/styles/slifer-style.css";
+</style>

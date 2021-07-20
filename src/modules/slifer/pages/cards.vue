@@ -60,18 +60,3 @@ export default {
   },
 };
 </script>
-
-<style lang="css">
-.card {
-  @apply bg-white rounded w-full p-1  shadow-xl dark:bg-gray-800 dark:text-gray-100;
-}
-.card-header {
-  @apply border-b border-gray-200 dark:border-gray-500 p-1 text-sm;
-}
-.card-body {
-  @apply border-gray-200 dark:border-gray-500 p-1;
-}
-.card-footer {
-  @apply border-t  py-1;
-}
-</style>
