@@ -1,6 +1,6 @@
 {
   "name": "slifer",
-  "version": "0.0.14",
+  "version": "0.0.18",
   "main": "src/modules/slifer/index.js",
   "scripts": {
     "dev": "vite",
