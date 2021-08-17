@@ -20,6 +20,9 @@
       <router-link to="/tables" class="nav-btn">
         <span>Tables</span>
       </router-link>
+      <router-link to="/prints" class="nav-btn">
+        <span>Prints</span>
+      </router-link>
     </template>
     <template v-slot:mainpage>
       <router-view></router-view>

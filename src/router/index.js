@@ -6,6 +6,7 @@ import notifications from "@/modules/slifer/pages/notifications.vue";
 import cards from "@/modules/slifer/pages/cards.vue";
 import forms from "@/modules/slifer/pages/forms.vue";
 import tables from "@/modules/slifer/pages/tables.vue";
+import prints from "@/modules/slifer/pages/prints.vue";
 
 const routes = [
   {
@@ -37,6 +38,11 @@ const routes = [
     path: "/tables",
     name: "tables",
     component: tables,
+  },
+  {
+    path: "/prints",
+    name: "prints",
+    component: prints,
   },
 ];
 
