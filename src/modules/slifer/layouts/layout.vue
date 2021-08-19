@@ -1,7 +1,7 @@
 <template>
   <div class="dark:bg-gray-900 dark:text-gray-100">
     <nav
-      class="font-sans flex flex-wrap justify-between sm:text-left sm:justify-between py-2 px-6 bg-white sm:items-baseline w-full dark:bg-gray-800 dark:text-gray-100 shadow-md border-b border-gray-100 dark:border-gray-700"
+      class="font-sans flex flex-wrap justify-between sm:text-left sm:justify-between py-2 px-6 bg-white sm:items-baseline w-full dark:bg-gray-800 dark:text-gray-100 shadow-md border-b border-gray-100 dark:border-gray-700 no-print"
       v-if="this.$slots.header"
     >
       <slot name="header"></slot>
@@ -10,7 +10,7 @@
       class="flex w-full h-screen bg-white text-dark dark:bg-gray-700 dark:text-gray-100"
     >
       <div
-        class="sidebar w-64 bg-white text-dark rounded p-1 shadow-lg dark:bg-gray-700 dark:text-gray-100"
+        class="sidebar w-64 bg-white text-dark rounded p-1 shadow-lg dark:bg-gray-700 dark:text-gray-100 no-print"
         v-if="this.$slots.sidebar"
       >
         <div class="flex flex-wrap items-center p-1 text-sm">

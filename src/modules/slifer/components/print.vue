@@ -1,19 +1,25 @@
 <template>
-  <div :class="`sprint ${classCard}`">
+  <div :class="classPrint">
     <table cellspacing="0">
       <thead>
         <tr>
-          <td :class="`print-header ${classHeader}`"><slot name="header"></slot></td>
+          <td :class="classHeader">
+            <slot name="header"></slot>
+          </td>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td :class="`print-header ${classBody}`"><slot name="body"></slot></td>
+          <td :class="classBody">
+            <slot name="body"></slot>
+          </td>
         </tr>
       </tbody>
       <tfoot>
         <tr>
-          <td :class="`print-footer ${classFooter}`"><slot name="footer"></slot></td>
+          <td :class="classFooter">
+            <slot name="footer"></slot>
+          </td>
         </tr>
       </tfoot>
     </table>
@@ -31,25 +37,22 @@ export default {
     classHeader: {
       type: String,
       require: false,
-      default: "",
+      default: "print",
     },
     classBody: {
       type: String,
       require: false,
-      default: "",
+      default: "print",
     },
     classFooter: {
       type: String,
       require: false,
-      default: "",
+      default: "print",
     },
   },
 };
 </script>
 <style scoped>
-div.conteudodatabela {
-  overflow: visible;
-}
 table > tbody {
   overflow: visible;
 }

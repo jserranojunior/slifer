@@ -1,9 +1,14 @@
 <template>
   <div class="flex">
     <div class="w-full pr-1">
-      <Print>
+      <Print classBody="showprint">
         <template v-slot:header>
-          <div>HEADER</div>
+          <div>
+            <img
+              src="https://wilcity.com/wp-content/uploads/2020/03/39875853-header-wallpapers.jpg"
+              alt=""
+            />
+          </div>
         </template>
         <template v-slot:body>
           <tr v-for="(index, item) in itens" :key="index">
@@ -15,7 +20,12 @@
           </tr>
         </template>
         <template v-slot:footer>
-          <div>FOOTER</div>
+          <div>
+            <img
+              src="https://carbonmade-media.accelerator.net/36695034;960x320.jpeg"
+              alt=""
+            />
+          </div>
         </template>
       </Print>
     </div>

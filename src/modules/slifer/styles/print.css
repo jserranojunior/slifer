@@ -1,0 +1,21 @@
+
+.print {
+  display: none;
+}
+.showprint{
+  display: block! important;
+}
+@media print {
+   body {
+    font-size: 16px;
+  }  
+  .print {
+    display: block;
+  }
+  .showprint{
+  display: block;
+}
+  .no-print {
+    display: none !important;
+  }
+}
