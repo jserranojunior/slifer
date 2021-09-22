@@ -2,11 +2,14 @@
   .sidebar-open {
     @apply w-64;
   }
+    .sidebar-close {
+         @apply hidden;
+    }
 
   .sidebar-close > div > div > nav > a > span.text-menu {
     @apply hidden;
   }
-
+/* 
   @screen sm {
     .sidebar-open {
       @apply w-64;
@@ -41,7 +44,7 @@
           @apply hidden;
 
     }
-  }
+  } */
 
   .nav-btn {
   @apply flex flex-row items-center 

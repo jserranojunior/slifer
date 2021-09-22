@@ -1,5 +1,12 @@
 <template>
-  <input class="form" :id="name" type="password" :name="name" v-model="value" />
+  <input
+    class="form"
+    :id="name"
+    type="password"
+    :name="name"
+    v-model="value"
+    autocomplete="on"
+  />
 </template>
 
 <script>

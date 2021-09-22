@@ -7,30 +7,35 @@
 </template>
 <script>
 export default {
+  // Verificar status da sidebar
+  // Quando for dispositivos pequenos ela se oculta sozinha ao carregamento
+
   name: "toggledark",
   mounted() {
     this.checkSidebar();
   },
   methods: {
     checkSidebar() {
+      console.log("Verificando");
       // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-      const sidebar = document.querySelector(".sidebar");
-      const storageSidebar = localStorage.getItem("sidebar");
+      if (document.querySelector(".sidebar")) {
+        const sidebar = document.querySelector(".sidebar");
+        const storageSidebar = localStorage.getItem("sidebar");
 
-      if (storageSidebar === "sidebar-open" && sidebar) {
-        localStorage.sidebar = "sidebar-open";
-        sidebar.classList.add("sidebar-open");
-        sidebar.classList.remove("sidebar-close");
-      } else if (!storageSidebar) {
-        localStorage.sidebar = "sidebar-open";
-        sidebar.classList.add("sidebar-open");
-        sidebar.classList.remove("sidebar-close");
-      } else {
-        localStorage.sidebar = "sidebar-close";
-        sidebar.classList.remove("sidebar-open");
-        sidebar.classList.add("sidebar-close");
+        if (storageSidebar === "sidebar-open" && sidebar) {
+          localStorage.sidebar = "sidebar-open";
+          sidebar.classList.add("sidebar-open");
+          sidebar.classList.remove("sidebar-close");
+        } else if (!storageSidebar) {
+          localStorage.sidebar = "sidebar-open";
+          sidebar.classList.add("sidebar-open");
+          sidebar.classList.remove("sidebar-close");
+        } else {
+          localStorage.sidebar = "sidebar-close";
+          sidebar.classList.remove("sidebar-open");
+          sidebar.classList.add("sidebar-close");
+        }
       }
-      console.log(sidebar);
     },
 
     toggleSidebar() {
@@ -48,7 +53,6 @@ export default {
         sidebar.classList.add("sidebar-open");
         sidebar.classList.remove("sidebar-close");
       }
-      console.log(sidebar);
     },
   },
 };

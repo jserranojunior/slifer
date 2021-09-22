@@ -1,6 +1,6 @@
 <template>
   <div class="flex">
-    <div class="w-1/2 pr-1">
+    <div class="w-full md:w-1/2 pr-1">
       <SCard>
         <template v-slot:header>
           <div>Card</div>
