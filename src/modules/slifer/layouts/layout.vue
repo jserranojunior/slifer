@@ -19,7 +19,7 @@
       </div>
       <!-- sm:w-8/12 md:w-10/12 lg:w-11/12 xl:w-11/12  -->
       <div
-        class="w-full z-0 p-2 absolute md:static bg-gray-100 dark:bg-gray-600 dark:text-gray-100"
+        class="w-full z-0 p-2 absolute md:static bg-blue-50 dark:bg-gray-600 dark:text-gray-100"
         @click="closeSidebarBodyClick()"
       >
         <slot name="mainpage"></slot>

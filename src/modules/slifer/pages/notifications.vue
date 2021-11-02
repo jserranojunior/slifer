@@ -23,8 +23,8 @@
         </template>
       </SCard>
     </div>
-    <div class="w-1/2 mt-2 pr-1">
-      <SCard class="mt-2">
+    <div class="w-1/2 pr-1">
+      <SCard>
         <template v-slot:header>
           <div>Toast</div>
         </template>
