@@ -16,7 +16,8 @@ import table from "./components/table.vue";
 import print from "./components/print.vue";
 
 // Layouts
-import layout from "./layouts/layout.vue";
+import layout from "./components/layout.vue";
+import header from "./components/header.vue";
 
 export default {
   install(Vue) {
@@ -38,5 +39,6 @@ export default {
     Vue.component("SToast", toast);
     Vue.component("STable", table);
     Vue.component("SPrint", print);
+    Vue.component("SHeader", header);
   },
 };
