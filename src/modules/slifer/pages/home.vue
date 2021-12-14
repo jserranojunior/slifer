@@ -1,7 +1,7 @@
 <template>
   <Cards></Cards>
 </template>
-<script>
+<script lang="ts">
 import Cards from "./cards.vue";
 export default {
   name: "Home",

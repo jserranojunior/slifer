@@ -1,7 +1,9 @@
 <template>
   <SLayout>
     <template v-slot:header>
-      <SHeader><template v-slot:header>Home Sobre Contato</template></SHeader>
+      <SHeader>
+        <template v-slot:header>Home Sobre Contato</template>
+      </SHeader>
     </template>
 
     <template v-slot:sidebar>
